@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index.html</title>
+
+    <script>
+        function main() {
+            n=prompt("Digite nome completo:");
+            console.log(n);
+            console.log(n[0]);
+            console.log(n.length);
+            console.log(n[n.length-1]);
+            console.log(n[0]+n[1]+n[2]);
+            console.log(n[3]);
+            n1="";
+            for(i=1;i<n.length;i++) {
+                n1+=n[i];
+            }
+            console.log(n1);
+            console.log(n[n.length-2]+n[n.length-1]);
+            
+            n1=inv_str(n);
+            console.log(n1);
+
+        }
+        function inv_str(str) {
+            inv_str="";
+
+            for(i=str.length-1;i>=0;i--) {
+                inv_str+=str[i];
+            }
+            return inv_str;
+        }
+        
+    </script>
+</head>
+<body onload="main()">
+    
+</body>
+</html>
